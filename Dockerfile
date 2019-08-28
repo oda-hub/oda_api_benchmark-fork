@@ -1,6 +1,6 @@
-FROM python:3.7-alpine
-#RUN source /init.sh;
-RUN pip install --no-cache-dir notebook==5.*
+FROM integralsw/osa-python27:11.0-3-g78d73880-20190124-105932-refcat-42.0-heasoft-6.22-python-2.7.15
+
+RUN source /init.sh; pip install --no-cache-dir notebook==5.*
 ARG NB_USER=jovyan
 ARG NB_UID=1000
 ENV USER ${NB_USER}
