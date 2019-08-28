@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.7-alpine
 RUN source /init.sh; pip install --no-cache-dir notebook==5.*
 ARG NB_USER=jovyan
 ARG NB_UID=1000
