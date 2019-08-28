@@ -1,3 +1,4 @@
+FROM ubuntu:18.04
 RUN source /init.sh; pip install --no-cache-dir notebook==5.*
 ARG NB_USER=jovyan
 ARG NB_UID=1000
